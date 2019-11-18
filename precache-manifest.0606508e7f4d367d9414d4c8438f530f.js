@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0050cf47315e1e3de8cebc5ef96adde8",
+    "revision": "816c4dfff0616f6f543b1e65cd69f6d6",
     "url": "/me4real/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/me4real/static/css/2.fa56de13.chunk.css"
   },
   {
-    "revision": "f992f53e916ba685539a",
+    "revision": "0eae767dd8417b6b7424",
     "url": "/me4real/static/css/main.3d89b319.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/me4real/static/js/2.9e3ae6cc.chunk.js"
   },
   {
-    "revision": "f992f53e916ba685539a",
-    "url": "/me4real/static/js/main.b21311d1.chunk.js"
+    "revision": "0eae767dd8417b6b7424",
+    "url": "/me4real/static/js/main.fe42a809.chunk.js"
   },
   {
     "revision": "b5f41fe0f574d6eaa7c5",
