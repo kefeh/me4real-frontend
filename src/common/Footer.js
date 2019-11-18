@@ -31,12 +31,12 @@ function Footer(props) {
                     <div className="col-md-3">
                         <h2>Quick Links</h2>
                         <Nav defaultActiveKey="/about" className="flex-column">
-                            <Nav.Link href="/about">About</Nav.Link>
+                            <Nav.Link href="about">About</Nav.Link>
                             <Nav.Link  >Support us</Nav.Link>
-                            <Nav.Link href="/news" eventKey="news">News</Nav.Link>
-                            <Nav.Link href="/event" eventKey="event">Events</Nav.Link>
+                            <Nav.Link href="news" eventKey="news">News</Nav.Link>
+                            <Nav.Link href="event" eventKey="event">Events</Nav.Link>
                             <Nav.Link  eventKey="podcast">Podcast</Nav.Link>
-                            <Nav.Link href="/contact" eventKey="contact" disabled>
+                            <Nav.Link href="contact" eventKey="contact" disabled>
                                 Contact
                             </Nav.Link>
                         </Nav>

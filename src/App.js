@@ -20,7 +20,7 @@ function App() {
       <Route path='/' exact component={LandingPage} />
       <Route path='/about'  component={About} />
       <Route path='/contact'  component={Contact} />
-      <Route path='/event' exact component={Event} />
+      <Route path='event' exact component={Event} />
       <Route path='/media' exact component={Media} />
       <Route path='/event/:event_id'  component={EventDetail} />
       <Route path='/news' exact component={News} />
