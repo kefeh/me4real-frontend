@@ -115,7 +115,7 @@ function LandingPage() {
                         </div>
                 </div>
                 <div className="col-md-8" style={{ height: '525px', padding: 0}}>
-                    <img src="/carousel.png" height='525px'  width="100%"   />
+                    <img src="carousel.png" height='525px'  width="100%"   />
                 </div>
 
             </div>

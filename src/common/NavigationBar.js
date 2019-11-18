@@ -8,7 +8,7 @@ function NavigationBar(){
             <Navbar style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)', color: 'white' }} collapseOnSelect expand="lg" variant="light" sticky="top">
                 <Navbar.Brand href="#home">
                     <img
-                        src="/logo.jpg"
+                        src="logo.jpg"
                         width="70"
                         height="50"
                         style={{ marginLeft: '40px' }}
@@ -21,8 +21,8 @@ function NavigationBar(){
 
                     <Nav className=" justify-content-center" justify>
                     <Nav.Link  href="/">Home</Nav.Link>
-                    <Nav.Link href="/event">Events</Nav.Link>
-                    <Nav.Link href="/news">News</Nav.Link>
+                    <Nav.Link href="event">Events</Nav.Link>
+                    <Nav.Link href="news">News</Nav.Link>
                     <Nav.Link href="/media">Media</Nav.Link>
                     <Nav.Link href="/contact">Contact</Nav.Link>
                     <Nav.Link href="/about">About</Nav.Link>

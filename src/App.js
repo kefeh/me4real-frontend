@@ -14,10 +14,10 @@ function App() {
   return (
     <>
       <NavigationBar />
-    <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       <Route path='/' exact component={LandingPage} />
-      <Route path='/about' exact component={About} />
-      <Route path='/contact' exact component={Contact} />
+      <Route path='/about'  component={About} />
+      <Route path='/contact'  component={Contact} />
       <Route path='/event' exact component={Event} />
       <Route path='/media' exact component={Media} />
       <Route path='/event/:event_id'  component={EventDetail} />
