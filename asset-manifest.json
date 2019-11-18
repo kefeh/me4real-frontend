@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/me4real/static/css/main.3d89b319.chunk.css",
+    "main.js": "/me4real/static/js/main.37f77b9f.chunk.js",
+    "main.js.map": "/me4real/static/js/main.37f77b9f.chunk.js.map",
+    "runtime-main.js": "/me4real/static/js/runtime-main.8093fefa.js",
+    "runtime-main.js.map": "/me4real/static/js/runtime-main.8093fefa.js.map",
+    "static/css/2.fa56de13.chunk.css": "/me4real/static/css/2.fa56de13.chunk.css",
+    "static/js/2.9e3ae6cc.chunk.js": "/me4real/static/js/2.9e3ae6cc.chunk.js",
+    "static/js/2.9e3ae6cc.chunk.js.map": "/me4real/static/js/2.9e3ae6cc.chunk.js.map",
+    "index.html": "/me4real/index.html",
+    "precache-manifest.581d075a8baf3731f86c5a8a3319a554.js": "/me4real/precache-manifest.581d075a8baf3731f86c5a8a3319a554.js",
+    "service-worker.js": "/me4real/service-worker.js",
+    "static/css/2.fa56de13.chunk.css.map": "/me4real/static/css/2.fa56de13.chunk.css.map",
+    "static/css/main.3d89b319.chunk.css.map": "/me4real/static/css/main.3d89b319.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8093fefa.js",
+    "static/css/2.fa56de13.chunk.css",
+    "static/js/2.9e3ae6cc.chunk.js",
+    "static/css/main.3d89b319.chunk.css",
+    "static/js/main.37f77b9f.chunk.js"
+  ]
+}
