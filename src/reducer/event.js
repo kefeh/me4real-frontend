@@ -7,7 +7,7 @@ import {
 
 export default function event(state = {}, action) {
     switch (action.type) {
-        case FETCH_ALL_EVENTS:
+        case FETCH_ALL_EVENTS_REQUEST:
             return {
                 ...state,
                 ...action.order,
