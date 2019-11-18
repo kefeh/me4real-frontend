@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import LandingPage from './LandingPage'
 import About from './component/About'
 import Contact from './component/Contact'
@@ -15,6 +15,8 @@ function App() {
     <>
       <NavigationBar />
       <Router basename={process.env.PUBLIC_URL}>
+        <Switch>
+
       <Route path='/' exact component={LandingPage} />
       <Route path='/about'  component={About} />
       <Route path='/contact'  component={Contact} />
@@ -23,6 +25,8 @@ function App() {
       <Route path='/event/:event_id'  component={EventDetail} />
       <Route path='/news' exact component={News} />
       <Route path='/news/:news_id'  component={NewsDetail} />
+      </Switch>
+
     </Router>
     <Footer />
     </>
