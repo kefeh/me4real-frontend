@@ -10,6 +10,9 @@ import EventDetail from './component/EventDetail'
 import Media from './component/Media'
 import NavigationBar from './common/NavigationBar'
 import Footer from './common/Footer'
+import Dashboard from './admin/Dashboard'
+import CarouselEdit from './admin/CarouselEdit'
+import CarouselAdd from './admin/CarouselAdd'
 function App() {
   return (
     <>
@@ -25,6 +28,9 @@ function App() {
       <Route path='/event/:event_id'  component={EventDetail} />
       <Route path='/news' exact component={News} />
       <Route path='/news/:news_id'  component={NewsDetail} />
+      <Route path='/dashboard'  component={Dashboard} />
+      <Route path='/CarouselEdit'  component={CarouselEdit} />
+      <Route path='/CarouselAdd'  component={CarouselAdd} />
       </Switch>
 
     </Router>

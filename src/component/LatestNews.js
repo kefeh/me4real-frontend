@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Button, CardDeck} from 'react-bootstrap'
+import { Card, Button, CardGroup, CardColumns} from 'react-bootstrap'
 import '../App.css'
 function LatestNews(){
     return (
@@ -8,23 +8,22 @@ function LatestNews(){
 
             <div className="card-container">
 
-            <CardDeck>
+                <CardColumns>
 
-           {[1,2,3].map(() => <Card style={{ width: '0rem' }}>
+           {[1,2,3].map(() => <Card >
                 <Card.Img variant="top" src="carousel.png" />
                 <Card.Body>
                     <Card.Title>Card Title goes in here for </Card.Title>
                     <hr />
                     <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        Some quick example text to build on the card title and make up
                 </Card.Text>
                    <small className="text-muted">
                        Someone famous in <cite title="Source Title">Source Title</cite>
                    </small>                </Card.Body>
             </Card>
             )}
-                </CardDeck>
+                </CardColumns>
             </div>
             <div className="readmore">
 

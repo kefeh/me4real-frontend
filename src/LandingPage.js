@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import {Carousel, Container, Image, Form, Button, Nav} from 'react-bootstrap'
 import LatestNews from './component/LatestNews'
 import UpcomingEvents from './component/UpcomingEvents'
@@ -21,17 +21,24 @@ const carousels = [
     }
 ]
 function LandingPage() {
-
+    const element = useRef(null)
+useEffect(()=>{
+    scrollToBottom()
+    
+}, [])
+    const scrollToBottom = () => {
+        element.current.scrollIntoView({ behavior: "auto" });
+    }
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" ref={element} >
 
         <section>
-                <div className="container">
-            <Carousel>
+                <div className="row"  > 
+                    <Carousel style={{ height: '575px' }}>
                 {
                     carousels.map((item) => 
                         <Carousel.Item>
-                            <img
+                            <img style={{ height: '575px' }}
                                 className="d-block w-100"
                                 src={item.img}
                                 alt="First slide"
@@ -46,30 +53,31 @@ function LandingPage() {
                 
             </Carousel>
             </div>
+            
         </section>
         <section>
             <div className="row" >
-                    <div className="col-md-3 mission-height site-primary-bg-color" >
+                    <div className="col-md-3 col-sm-3 mission-height site-primary-bg-color" >
                          <div style={{paddingTop: 20}} >
                             <a href="/"><p className="large-text">some text</p></a>
                             <p className="small-text"> our goal, vision , mission</p>
                         </div>
                          
                          </div>
-                    <div className="col-md-3 mission-height site-secondary-bg-color" > 
+                    <div className="col-md-3 col-sm-3 mission-height site-suppliment-bg-color" > 
                         <div style={{ paddingTop: 20 }} >
                             <a href="/"><p className="large-text">some text</p></a>
                             <p className="small-text"> our goal, vision , mission</p>
                         </div>
                     </div>
-                    <div className="col-md-3 mission-height site-tertiary-bg-color" >
+                    <div className="col-md-3 col-sm-3 mission-height site-tertiary-bg-color" >
                         <div style={{ paddingTop: 20 }} >
                             <a href="/"><p className="large-text">some text</p></a>
                             <p className="small-text"> our goal, vision , mission</p>
                         </div>
 
                     </div>
-                    <div className="col-md-3 mission-height site-suppliment-bg-color"  >
+                    <div className="col-md-3 mission-height site-secondary-bg-color"  >
                         <div style={{ paddingTop: 20 }} >
                             <a href="/"><p className="large-text">some text</p></a>
                             <p className="small-text"> our goal, vision , mission</p>
@@ -86,9 +94,9 @@ function LandingPage() {
         {/* Badge section */}
         <section>
 
-                <div className="row mission-height site-tertiary-bg-color">
+                <div className="row mission-height site-primary-bg-color middle" >
                 <br />
-                <p  style={{textAlign: 'center', paddingTop:'30px', paddingLeft: '200px'}}>
+                <p  style={{textAlign: 'center', paddingTop:'30px',}}>
                         <span className="badge-section-text">am no bird; and no net ensnares me; I am a free <br />
    human being with an independent will.
    </span>
@@ -97,34 +105,29 @@ function LandingPage() {
             </div>
 
         </section>
-        {/* up coming events section */}
-        <section>
-            <UpcomingEvents />
-        </section>
+            {/* up coming events section */}
+            <section>
+                <UpcomingEvents />
+            </section>
 
-        {/* Join us section */}
-        <section>
-            <div className="row">
-                    <div className="col-md-4 site-secondary-bg-color" style={{ height: '525px', textAlign: 'center'}}>
-                        <div className="section-image-side-text">
+            {/* Join us section */}
+            <section>
+                <div className="row">
+                    <div className="col-md-4 site-primary-bg-color" style={{ height: '525px', textAlign: 'center' }}>
+                        <div className="section-image-side-text" style={{ color: 'white' }}>
                             <h3 >Join Us</h3>
                             <p>
                                 Empower our women and girls
                             </p>
-                            <Button variant="info"> Donate Now</Button>
+                            <Button variant="warning"> Donate Now</Button>
                         </div>
-                </div>
-                <div className="col-md-8" style={{ height: '525px', padding: 0}}>
-                    <img src="carousel.png" height='525px'  width="100%"   />
-                </div>
+                    </div>
+                    <div className="col-md-8" style={{ height: '525px', padding: 0 }}>
+                        <img src="carousel.png" height='525px' width="100%" />
+                    </div>
 
-            </div>
-        </section>
-
-        {/* floating button */}
-            <div className="float">
-           <span style={{backgroundColor: 'red'}}> Check</span> 
-        </div>
+                </div>
+            </section>
 
         {/* footer section */}
 

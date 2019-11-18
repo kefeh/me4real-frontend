@@ -1,5 +1,7 @@
 import {
-    FETCH_ALL_NEWS,
+    FETCH_ALL_EVENTS_REQUEST,
+    FETCH_ALL_EVENTS_SUCCESS,
+    FETCH_ALL_EVENTS_FAILURE
 } from '../constant';
 import { get_news } from '../helper/api'
 
