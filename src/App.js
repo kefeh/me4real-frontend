@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import LandingPage from './LandingPage'
+import About from './component/About'
+import Contact from './component/Contact'
+import NewsDetail from './component/NewsDetail'
+import Event from './component/Event'
+import News from './component/News'
+import EventDetail from './component/EventDetail'
+import Media from './component/Media'
+import NavigationBar from './common/NavigationBar'
+import Footer from './common/Footer'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavigationBar />
+    <Router>
+      <Route path='/' exact component={LandingPage} />
+      <Route path='/about' exact component={About} />
+      <Route path='/contact' exact component={Contact} />
+      <Route path='/event' exact component={Event} />
+      <Route path='/media' exact component={Media} />
+      <Route path='/event/:event_id'  component={EventDetail} />
+      <Route path='/news' exact component={News} />
+      <Route path='/news/:news_id'  component={NewsDetail} />
+    </Router>
+    <Footer />
+    </>
+
   );
 }
 

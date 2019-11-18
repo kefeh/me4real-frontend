@@ -20,3 +20,160 @@
 .App-link {
   color: #09d3ac;
 }
+a {
+    cursor: pointer;
+    text-decoration: none; 
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+/* Latest news styles */
+.latest-news-h2 {
+  font: normal normal normal 70px/1.4em poppins-semibold,poppins,sans-serif;
+  pointer-events: auto;
+  color: #333333;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 60px;
+}
+.card-container {
+  padding: 50px;
+}
+
+.readmore {
+  text-align: center;
+  color: #4207e4;
+  line-height: normal;
+  padding: 10px;
+  letter-spacing: normal;
+
+}
+
+/* upcoming Event */
+.event-card {
+  padding: 30px 0px;
+  border-bottom-width: 1px;
+      align-items: center;
+        text-align: center;
+border-color:rgb(204, 204, 204)
+
+}
+.event-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+      text-align: center;
+
+    width: 100%;
+}
+.text-container {
+  position: relative;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: calc(100% - 200px);
+}
+.date-container {
+  display: flex;
+    align-items: center;
+}
+.day {
+  font-size: 40px !important;
+    white-space: nowrap;
+}
+.month-container {
+  margin-right: 5px;
+}
+.month {
+  font-size: 14px !important;
+    white-space: nowrap;
+}
+
+
+/* mission section */
+.large-text {
+  font: normal normal normal 40px/1.4em poppins-semibold,poppins,sans-serif;
+    transition: color 0.4s ease 0s;
+    color: #FFFFFF;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: normal;
+    margin-bottom: 0;
+
+}
+.small-text {
+  text-align: center;
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #FFFFFF;
+}
+.mission-height {
+  height: 150px ;
+}
+
+
+/* Badge section  */
+.badge-section-text {
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: normal;
+    margin-bottom: 0;
+      font: italic normal normal 34px/1.4em avenir-lt-w01_35-light1475496,sans-serif
+}
+
+
+.float {
+  width: 200px;
+  height: 200px;
+  font-size: 24px;
+  line-height: 46px;
+  color: rgb(9, 214, 43);
+  background: #d41616;
+  border-radius: 50%;
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4);
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  display: none;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  z-index: 90; 
+}
+.float:hover {
+    color: #fff;
+    background: #15dde4;
+    text-decoration: none; }
+
+.mobile .float,
+.tablet .float {
+  display: none !important; }
+
+  .section-image-side-text {
+     line-height: normal;
+      letter-spacing: normal;;
+       text-align: center;
+       margin-top: 250px;
+       color: rgba(85, 60, 8, 0.856);
+  }
+  .site-primary-bg-color {
+    background-color: #000000 !important;
+  }
+  .site-secondary-bg-color {
+    background-color: #FFCC00;
+  }
+  .site-tertiary-bg-color {
+    background-color: #A4A4A4;
+    color: white;
+  }
+  .site-suppliment-bg-color {
+    background-color: #D2F898 ;
+  }
