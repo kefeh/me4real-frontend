@@ -34,11 +34,11 @@ useEffect(()=>{
 
         <section>
                 <div className="row"  > 
-                    <Carousel style={{ height: '575px' }}>
+                    <Carousel >
                 {
                     carousels.map((item) => 
                         <Carousel.Item>
-                            <img style={{ height: '575px' }}
+                            <img style={{ height: '575px', width: '100%' }}
                                 className="d-block w-100"
                                 src={item.img}
                                 alt="First slide"

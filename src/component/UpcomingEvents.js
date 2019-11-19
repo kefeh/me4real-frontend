@@ -23,7 +23,7 @@ function UpcomingEvents() {
 
                                 </div>
                                     <div> Women engineer tech javascript gurus  </div>
-                            <div>
+                     <div style={{ padding: '20px'}}>
                          <Button variant="warning" size="md">
                                      More Detials
                                 </Button>   

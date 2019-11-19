@@ -16,7 +16,7 @@ function LatestNews(){
                     <Card.Title>Card Title goes in here for </Card.Title>
                     <hr />
                     <Card.Text>
-                        Some quick example text to build on the card title and make up
+                        Some quick example text to build
                 </Card.Text>
                    <small className="text-muted">
                        Someone famous in <cite title="Source Title">Source Title</cite>
