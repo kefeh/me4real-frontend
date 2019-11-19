@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import LandingPage from './LandingPage'
 import About from './component/About'
 import Contact from './component/Contact'
@@ -16,8 +16,8 @@ import CarouselAdd from './admin/CarouselAdd'
 function App() {
   return (
     <>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <NavigationBar />
-      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
 
       <Route path='/' exact component={LandingPage} />
@@ -33,7 +33,7 @@ function App() {
       <Route path='/CarouselAdd'  component={CarouselAdd} />
       </Switch>
 
-    </Router>
+      </BrowserRouter>
     <Footer />
     </>
 

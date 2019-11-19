@@ -5,7 +5,17 @@ import UpcomingEvents from './component/UpcomingEvents'
 import './App.css'
 const carousels = [
     {
-    img: "carousel.png",
+        img: "carousel2.png",
+        title: "Your news home",
+        heading: "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
+    },
+    {
+    img: "carousel3.jpg",
+    title: "Best broadcase news ",
+    heading: "Nulla vitae elit libero, a pharetra augue mollis interdum."
+    },
+    {
+    img: "carousel.jpg",
     title: "First slide label",
     heading: "Nulla vitae elit libero, a pharetra augue mollis interdum."
     },
@@ -13,12 +23,8 @@ const carousels = [
     img: "carousel1.png",
     title: "Second slide label",
     heading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-    img: "carousel2.png",
-    title: "Third slide label",
-    heading: "Praesent commodo cursus magna, vel scelerisque nisl consectetur."
     }
+
 ]
 function LandingPage() {
     const element = useRef(null)
@@ -123,7 +129,7 @@ useEffect(()=>{
                         </div>
                     </div>
                     <div className="col-md-8" style={{ height: '525px', padding: 0 }}>
-                        <img src="carousel.png" height='525px' width="100%" />
+                        <img src="generic.jpeg" height='525px' width="100%" />
                     </div>
 
                 </div>

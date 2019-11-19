@@ -11,7 +11,7 @@ function LatestNews(){
                 <CardColumns>
 
            {[1,2,3].map(() => <Card >
-                <Card.Img variant="top" src="carousel.png" />
+                <Card.Img variant="top" src="cardbg.png" />
                 <Card.Body>
                     <Card.Title>Card Title goes in here for </Card.Title>
                     <hr />
