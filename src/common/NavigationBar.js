@@ -22,7 +22,7 @@ function NavigationBar(){
                     <Nav className=" justify-content-center" style={{ color: '#FFCC00'}} justify>
                         <Nav.Link style={{ color: '#FFCC00' }}  href="/">Home</Nav.Link>
                         <Nav.Link  href="event">Events</Nav.Link>
-                    <Nav.Link href="news">News</Nav.Link>
+                        <Nav as={Link} to='news' >News</Nav>
                     <Nav.Link href="media">Media</Nav.Link>
                     <Nav.Link href="contact">Contact</Nav.Link>
                     <Nav.Link href="about">About</Nav.Link>
