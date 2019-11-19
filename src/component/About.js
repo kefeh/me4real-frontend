@@ -35,16 +35,17 @@ function About(params) {
                 </Container>
             </Jumbotron>
             </section>
+            {/* Badge section */}
             <section>
 
-                <div className="row mission-height site-tertiary-bg-color" style={{  color: "white" }}>
+                <div className="row mission-height site-secondary-bg-color middle" >
                     <br />
-                    <p style={{ textAlign: 'center', paddingTop: '30px', paddingLeft: '200px' }}>
+                    <p style={{ textAlign: 'center', paddingTop: '30px', }}>
                         <span className="badge-section-text">am no bird; and no net ensnares me; I am a free <br />
                             human being with an independent will.
-   </span>
+                        </span>
                         lorem ipsum here
-                </p>
+                    </p>
                 </div>
 
             </section>
@@ -82,6 +83,21 @@ function About(params) {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            {/* Badge section */}
+            <section>
+
+                <div className="row mission-height site-primary-bg-color middle" >
+                    <br />
+                    <p style={{ textAlign: 'center', paddingTop: '30px', }}>
+                        <span className="badge-section-text">am no bird; and no net ensnares me; I am a free <br />
+                            human being with an independent will.
+                        </span>
+                        lorem ipsum here
+                    </p>
+                </div>
+
             </section>
         </div>
     )

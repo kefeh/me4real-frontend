@@ -67,7 +67,21 @@ function Contact(params) {
 
                 </div>
             </section>
-        
+            {/* Badge section */}
+            <br /> 
+            <section>
+
+                <div className="row mission-height site-secondary-bg-color middle" >
+                    <br />
+                    <p style={{ textAlign: 'center', paddingTop: '30px', }}>
+                        <span className="badge-section-text">am no bird; and no net ensnares me; I am a free <br />
+                            human being with an independent will.
+                        </span>
+                        lorem ipsum here
+                    </p>
+                </div>
+
+            </section>
         </div>
     )
 }

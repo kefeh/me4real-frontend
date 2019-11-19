@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function NavigationBar(){
     return (
         <>
-            <Navbar style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)', color: 'white' }} collapseOnSelect expand="lg" variant="light" sticky="top">
+            <Navbar style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)', color: '#FFCC00' }} collapseOnSelect expand="lg"  sticky="top">
                 <Navbar.Brand href="#home">
                     <img
                         src="logo.jpg"
@@ -19,9 +19,9 @@ function NavigationBar(){
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav " className="justify-content-center">
 
-                    <Nav className=" justify-content-center" justify>
-                    <Nav.Link  href="/">Home</Nav.Link>
-                    <Nav.Link href="event">Events</Nav.Link>
+                    <Nav className=" justify-content-center" style={{ color: '#FFCC00'}} justify>
+                        <Nav.Link style={{ color: '#FFCC00' }}  href="/">Home</Nav.Link>
+                        <Nav.Link  href="event">Events</Nav.Link>
                     <Nav.Link href="news">News</Nav.Link>
                     <Nav.Link href="media">Media</Nav.Link>
                     <Nav.Link href="contact">Contact</Nav.Link>
