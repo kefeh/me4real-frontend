@@ -62,7 +62,7 @@ function Contact(params) {
                         </div>
                     </div>
                     <div className="col-md-6" style={{ height: '600px', padding: 0 }}>
-                        <img src="/generic.jpeg" height='680px' width="100%" />
+                        <img src="generic.jpeg" height='680px' width="100%" />
                     </div>
 
                 </div>
