@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navbar, Nav, Form, FormControl, Button}  from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function NavigationBar(){
     return (
@@ -20,12 +21,40 @@ function NavigationBar(){
                 <Navbar.Collapse id="responsive-navbar-nav " className="justify-content-center">
 
                     <Nav className=" justify-content-center" style={{ color: '#FFCC00'}} justify>
-                        <Nav.Link style={{ color: '#FFCC00' }}  href="/">Home</Nav.Link>
-                        <Nav.Link  href="event">Events</Nav.Link>
-                        <Nav as={Link} to='news' >News</Nav>
-                    <Nav.Link href="media">Media</Nav.Link>
-                    <Nav.Link href="contact">Contact</Nav.Link>
-                    <Nav.Link href="about">About</Nav.Link>
+                        <nav className='nav'>
+                            <ul>
+                                <li>
+                                    <NavLink to='/' exact activeClassName='active'>
+                                        Home
+					                </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to='/event' exact activeClassName='active'>
+                                        Events
+					                </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to='/news' exact activeClassName='active'>
+                                        News
+					                </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to='/media' exact activeClassName='active'>
+                                        Media
+					                </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to='/contact' exact activeClassName='active'>
+                                        Contact
+					                </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to='/about' exact activeClassName='active'>
+                                        About
+					                </NavLink>
+                                </li>
+                            </ul>
+                        </nav>
                 </Nav>
                 </Navbar.Collapse>
 

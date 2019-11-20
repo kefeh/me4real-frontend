@@ -28,7 +28,67 @@ a:hover {
     cursor: pointer;
     text-decoration: none !important;
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
 
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 8px;
+  text-decoration: none;
+  padding-left: 20px;
+}
+.active {
+  font-weight: bold;
+  color: #FFCC00;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.nav li:first-child {
+  padding-left: 0;
+}
+/* small screen */
+@media(max-width: 575px){
+
+ .nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+li {
+  list-style-type: none;
+  padding: 2px;
+  text-decoration: none;
+}
+}
 /* Latest news styles */
 
 .card-container {

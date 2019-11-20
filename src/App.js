@@ -33,8 +33,8 @@ function App() {
       <Route path='/CarouselAdd'  component={CarouselAdd} />
       </Switch>
 
+      <Footer />
       </BrowserRouter>
-    <Footer />
     </>
 
   );

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Nav, Button , Form} from 'react-bootstrap'
+import { NavLink }  from 'react-router-dom'
 function Footer(props) {
     
     return(
@@ -31,14 +32,40 @@ function Footer(props) {
                     <div className="col-md-3">
                         <h2>Quick Links</h2>
                         <Nav defaultActiveKey="/about" className="flex-column">
-                            <Nav.Link href="about">About</Nav.Link>
-                            <Nav.Link  >Support us</Nav.Link>
-                            <Nav.Link href="news" eventKey="news">News</Nav.Link>
-                            <Nav.Link href="event" eventKey="event">Events</Nav.Link>
-                            <Nav.Link  eventKey="podcast">Podcast</Nav.Link>
-                            <Nav.Link href="contact" eventKey="contact" disabled>
-                                Contact
-                            </Nav.Link>
+                            <nav className='nav'>
+                                <ul style={{flexDirection: 'column'}}>
+                                    <li>
+                                        <NavLink to='/' exact activeClassName='active'>
+                                            Home
+					                </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='/event' exact activeClassName='active'>
+                                            Events
+					                </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='/news' exact activeClassName='active'>
+                                            News
+					                </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='/media' exact activeClassName='active'>
+                                            Media
+					                </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='/contact' exact activeClassName='active'>
+                                            Contact
+					                </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to='/about' exact activeClassName='active'>
+                                            About
+					                </NavLink>
+                                    </li>
+                                </ul>
+                            </nav>
                         </Nav>
 
                     </div>
