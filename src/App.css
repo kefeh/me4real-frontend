@@ -149,7 +149,10 @@ border-color:rgb(204, 204, 204)
 }
 .day {
   font-size: 40px !important;
-    white-space: nowrap;
+  white-space: nowrap;
+  margin-right: 12px;
+  margin-top: calc(0px + -.25em);
+  margin-bottom: calc(0px + -0.25em);
 }
 .month-container {
   margin-right: 5px;
@@ -207,34 +210,21 @@ border-color:rgb(204, 204, 204)
 
 
 .float {
-  width: 200px;
-  height: 200px;
-  font-size: 24px;
-  line-height: 46px;
-  color: rgb(9, 214, 43);
-  background: #d41616;
-  border-radius: 50%;
-  -webkit-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
   position: fixed;
-  right: 40px;
-  bottom: 40px;
-  display: none;
-  overflow: hidden;
-  text-align: center;
-  text-decoration: none;
-  z-index: 90; 
+  width: 100%;
+  height: calc(100% - 0px);
+  margin-top: 0;
+  display: grid;
+  z-index: 50; 
 }
-.float:hover {
-    color: #fff;
-    background: #15dde4;
-    text-decoration: none; }
-
-.mobile .float,
-.tablet .float {
-  display: none !important; }
-
+.float-inner{
+  justify-self: end;
+  align-self: center;
+  position: absolute;
+  background-color: rgba(14, 41, 115,1);
+}
   .section-image-side-text {
      line-height: normal;
       letter-spacing: normal;;
@@ -318,4 +308,114 @@ border-color:rgb(204, 204, 204)
       grid-column-gap: 1.25rem;
       /* column-gap: 2.7rem !important; */
   }
+}
+
+
+.elmt {
+  padding: 30px 0px;
+  border-bottom-width: 1px;
+}
+._2ipfx{
+  border-color: rgb(204, 204, 204);
+}
+._1eoat{
+  border-style: solid;
+  border-width: 0;
+}
+
+._5vofw{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 40px;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+  padding-top: 20px;
+  margin-top: 10px;
+  /* width: 100%; */
+  border-style: solid;
+  border-width: 0;
+}
+._1n3in{
+  left: 0;
+  transition: left .4s;
+  cursor: pointer;
+}
+._2giuh {
+  margin-left: 40px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  flex-shrink: 0;
+  height: 80px;
+}
+._2bogo {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 108px;
+}
+
+._3qhs {
+  transition: .4s;
+  max-width: calc(100%-108px);
+}
+._2cofy{
+  min-width: 108px;
+  color: rgb(0,0,0);
+  font: normal normal normal 26px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+
+}
+._1pwyx {
+  margin-right: 12px;
+  margin-top: calc(0px + -.25em);
+  margin-bottom: calc(0px + -0.25em);
+}
+._33jt {
+  margin-right: 5px;
+  margin-top: calc(0px + -.25em);
+  margin-bottom: calc(0px + -0.25em);
+}
+.month-label {
+  font-size: 14px !important;
+  white-space: nowrap;
+  opacity: 0.5;
+}
+.month-value {
+  font-size: 14px !important;
+  white-space: nowrap;
+}
+
+._153IM {
+  display: flex;
+  align-items: baseline;
+  white-space: nowrap;
+}
+.event-item-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5 !important;
+  font: normal normal normal 26px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+
+}
+
+.event-item-location {
+  color: rgb(0,0,0);
+  font: normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+}
+.register-btn{
+  min-width: 100px;
+  max-width: 160px;
+  background-color: rgb(236, 94, 135);
+  font: normal normal bold 15px/18px poppins-extralight,poppins,sans-serif;
+  color: rgb(255, 255, 255);
+  border: 0;
+  cursor: pointer;
+  margin-left: 60px;
+  padding: 6px 16px;
 }

@@ -135,6 +135,11 @@ useEffect(()=>{
                 </div>
             </section>
 
+{/* flooat section */}
+
+<div className="float">
+    <div className="float-inner"> some text</div>
+</div>
         {/* footer section */}
 
         {/* <section  style={{backgroundColor: 'red'}}>
